@@ -94,7 +94,9 @@
             <div class="form-group" style="margin-top: 10px;">
               <label for="message">Message:</label>
               <textarea class="form-control" id="message" rows="5" name="message" placeholder="Message"></textarea>
-              <div class="btn"><a href="contact.html"><button>Message</button></a></div>
+              <div class="btn" onclick="redirectToContact()">
+                  <button type="button">Message</button>
+              </div>
           </div>
               
         </div>
@@ -144,5 +146,11 @@
       </div>
   </footer>
   
+
+  <script>
+    function redirectToContact() {
+        window.location.href = 'contact.html';
+    }
+</script>
 </body>
 </html>
