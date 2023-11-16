@@ -11,7 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-   
+   <style>
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh; 
+    }
+  
+    .btn button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body style="background: url('images/bgg1.jpg') center center fixed; background-size: cover;">
 
@@ -79,15 +91,11 @@
                 <label for="pno">Phone Number:</label>
                 <input type="text" class="form-control form-control" name="pno" id="pno" placeholder="Phone">
             </div>
-            <div class="form-group" style="margin-top: 30px;">
-                <label for="message">Message:</label>
-                <textarea class="form-control" id="message" rows="5" name="message" placeholder="Message"></textarea>
-            </div>
-            <a href="index.html">
-                <div class="messagebtn text-center">
-                  <button type="submit" name="addMessage">Message</button>
-                </div>
-              </a>
+            <div class="form-group" style="margin-top: 10px;">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" rows="5" name="message" placeholder="Message"></textarea>
+              <div class="btn"><a href="contact.html"><button>Message</button></a></div>
+          </div>
               
         </div>
       </form>
